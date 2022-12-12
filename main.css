@@ -1,0 +1,29 @@
+.header {
+    margin: 0px;
+    padding: 20px;
+    background-color: black;
+    color: lightgray;
+    width: 100%;
+}
+body {
+    background: #3e3e42;
+}
+.cardTitle {
+    font-weight: bold;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+@media screen and (max-device-width: 768px)
+{
+    .flag {
+        max-height: 100px;
+    }
+    h1 {
+        font-size: 3rem;
+        display: inline-block;
+        margin-left: 15px;
+    }
+
+}
