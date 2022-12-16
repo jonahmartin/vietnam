@@ -1,4 +1,3 @@
-/*GENERAL CSS*/
 .header {
     margin: 0px;
     padding: 20px;
@@ -9,7 +8,6 @@
 body {
     background: #3e3e42;
 }
-/*CARDS GENERAL*/
 .cardTitle {
     font-weight: bold;
 }
@@ -17,11 +15,9 @@ a {
     text-decoration: none;
     color: black;
 }
-
-/*MOBILE*/
+/*Responsive css for mobile devices*/
 @media screen and (max-device-width: 768px)
 {
-    /*HEADER TYPOGRAPHY & FLAG*/
     .flag {
         max-height: 100px;
     }
@@ -30,40 +26,84 @@ a {
         display: inline-block;
         margin-left: 15px;
     }
-
+    .txtBody {
+        font-size: 20px;
+    }
+    .hstImg {
+        width: 400px;
+        height: auto;    
+    }
 }
-/*TABLET*/
-@media screen and (min-device-width: 769px)
+/*responsive css for tablet screens*/
+@media screen and (min-device-width: 769px) 
 {
-    /*HEADER TYPOGRAPHY & FLAG*/
-    .flag {
-        max-height: 150px;
+    .txtBody {
+        font-size: 24px;
     }
-    h1 {
-        font-size: 4.5rem;
-        display: inline-block;
-        margin-left: 15px;
-    }
-    /*CHANGES LAYOUT OF CARDS FROM MOBILE TO TABLET*/
-    .container {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-    }
-    .card {
-        margin-top: 0px;
+    .hstImg {
+        width: 550px;
+        height: auto;    
     }
 }
-/*DESKTOP*/
+
+/* responsive css for pc monitors*/
 @media screen and (min-device-width: 1201px)
 {
-    /*HEADER TYPOGRAPHY & FLAG*/
-    .flag {
-        max-height: 200px;
+    .hstImg {
+        width: 600px;
+        height: auto;
+    
     }
-    h1 {
-        font-size: 5rem;
-        display: inline-block;
-        margin-left: 15px;
-    }
+}
+
+
+.txtBody {
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+.hstImg {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.carousel-caption {
+    background-color: rgb(57, 58, 57, 0.85);
+}
+.carousel {
+    max-width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.contenttitle {
+    text-decoration: underline;
+    font-variant: small-caps;
+    padding: 20px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    background-color: rgb(129, 3, 3);
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+    display: block;
+}
+#carousel {
+    margin-bottom: 5%;
+}
+.row {
+    margin: 5%
+}
+.contactForm {
+    background-color: rgb(77, 1, 1);
+    padding: 15px;
+    border: solid gold;
+    border-radius: 10px;
+}
+label {
+    padding: 5px;
 }
